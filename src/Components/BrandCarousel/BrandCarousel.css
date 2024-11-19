@@ -1,0 +1,33 @@
+.scrolling-banner {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .banner-track {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 0;
+    animation: scroll 100s linear infinite;
+    will-change: transform;
+  }
+  
+  .banner-track img {
+    height: 50px; /* Adjust logo size */
+    object-fit: contain;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
